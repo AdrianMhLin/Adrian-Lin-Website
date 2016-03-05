@@ -1,4 +1,12 @@
-/*backgrounds*/
+/*h1,h2,h3,h4,h5,h6 {
+	
+}
+*/
+
+h1,h2,h3,h4,h5,h6, p {
+	text-align:center;
+}
+
 .bg-image {
 	width: 100%;
 	background-size:100%;
@@ -15,21 +23,30 @@
 	height: 60vw;
 	text-align: center;
 }
-
+#bg-my-process {
+	background-image: url('/images/fornow/my-process.png');
+	height:50vw;
+}
 
 
 /*section blocks */
 .section-block {
+	padding: 3vw 0 3vw 0;
 	width: 100%;
+	background-color: lightblue;
 
 }
 .section-block img{
 	max-width: 100%;
 }
 
+/*landing page*/
+
 	/*work samples */
+/*	.work-sample * {
+		float:left;
+	}*/
 	.work-sample img {
 		width: 10vw;
-		float:left;
 	}
 
