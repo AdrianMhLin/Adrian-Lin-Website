@@ -1,3 +1,10 @@
-#bg-landing {
+
+.bg-image {
 	width: 100%;
+	background-size:100%;
+}
+
+#bg-landing {
+	background-image: url('bg.jpg');
+	height:50vw;
 }
