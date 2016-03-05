@@ -5,13 +5,13 @@
 }
 
 #bg-landing {
-	background-image: url('bg.jpg');
+	background-image: url('/images/bg.jpg');
 	height:60vw;
 	text-align: center;
 }
 
 #bg-contact {
-	background-image: url('contact.jpg');
+	background-image: url('/images/contact.jpg');
 	height: 60vw;
 	text-align: center;
 }
