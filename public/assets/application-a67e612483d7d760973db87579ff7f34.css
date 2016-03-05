@@ -1,0 +1,52 @@
+/*backgrounds*/
+
+.bg-image {
+	width: 100%;
+	background-size:100%;
+}
+
+#bg-landing {
+	background-image: url('/images/bg.jpg');
+	height:40.8vw;
+	text-align: center;
+}
+
+#bg-contact {
+	background-image: url('/images/contact.jpg');
+	height: 60vw;
+	text-align: center;
+}
+
+
+
+/*section blocks */
+.section-block {
+	width: 100%;
+
+}
+.section-block img{
+	max-width: 100%;
+}
+
+	/*work samples */
+	.work-sample img {
+		width: 10vw;
+		float:left;
+	}
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+

@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   root 'home#landing'
 
-  get '/about' => 'home#about'
+  get '/experience' => 'home#experience'
   get '/work' => 'home#work'
   get '/contact' => 'home#contact'
   get '/blog' => 'home#blog'

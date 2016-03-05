@@ -5,8 +5,8 @@ class HomeController < ApplicationController
 
   # any other ones should probably be single page applications
 
-  def about
-    render :about
+  def experience
+    render :experience
   end
 
   def work
