@@ -23,6 +23,13 @@ h1,h2,h3,h4,h5,h6, p {
 	height: 60vw;
 	text-align: center;
 }
+
+#my-tools {
+/*	background-image: url('/images/fornow/my-tools.png');
+	height:50vw;*/
+	background-color:white;
+
+}
 #bg-my-process {
 	background-image: url('/images/fornow/my-process.png');
 	height:50vw;
