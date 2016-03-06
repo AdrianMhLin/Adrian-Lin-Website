@@ -21,8 +21,10 @@
 
   <h3>[[Interactive resume goes here]]</h3>
 
-  <h3><a href="/pdfs/resume_adrian_lin.pdf" download="Adrian Lin Resume" id="download-resume">Download my resume!</a></h3>
-  <h3><a href="mailto:">Email my resume to yourself!</a></h3>
+  <a class="btn btn-primary btn-lg" role="button" href="/pdfs/resume_adrian_lin.pdf" download="Adrian/Lin/Resume" id="download-resume">Download my resume!</a>
+
+
+  <a class="btn btn-primary btn-lg" role="button" href="" id="mailResumeToSelf">Email my resume link to yourself!</a>
   <!-- how to mail to clicker's own email? -->
   <!-- how to include body text and more importantly, link to my resume ? -->
 
@@ -30,20 +32,48 @@
 <script>
 
   $(document).ready(function(){
+    addDateToResumeName();
+    prepareMailtoWithResume();
 
 
-    /* set up new date on PDF download */
+  });
+
+  function addDateToResumeName(){
     var $downloadResume = $('#download-resume'),
         docName = $downloadResume.attr('download'),
         date = new Date(),
         dateToAppend = (date.getMonth() + 1) + '/' + date.getDate() + '/' +  date.getFullYear();
 
-    var newDocName = docName + dateToAppend + '.pdf';
+    var newDocName = docName + '_' + dateToAppend + '.pdf';
     $downloadResume.attr('download', newDocName);
-    /* end */
+  }
+
+  function prepareMailtoWithResume(){
+    var $mailtoBtn = $('#mailResumeToSelf'),
+        downloadLink = 'http://' + window.location.host + '/pdfs/resume_adrian_lin.pdf',
+        website = 'http://adrianlin.com',
+
+        /*mailto components */
+        emailAddress = 'email@email.com',
+        subject = 'Check out this Adrian Lin guy!',
+        body = 'Remember to check out Adrian Lin!' 
+                + '%0A'
+                + 'Website: ' + website 
+                + '%0A'
+                + 'Resume: ' + downloadLink,
+
+        finalMailto;
+
+    finalMailto = emailAddress 
+                  + '?subject=' + subject
+                  + '&body=' + body 
+    finalMailto = 'mailto:' + finalMailto;
+    $mailtoBtn.attr('href', finalMailto);
 
 
-  });
+
+
+  }
 </script>
 
 
