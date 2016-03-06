@@ -20,8 +20,30 @@
   <h1 class="section-title">Work history</h1>
 
   <h3>[[Interactive resume goes here]]</h3>
+
+  <h3><a href="/pdfs/resume_adrian_lin.pdf" download="Adrian Lin Resume" id="download-resume">Download my resume!</a></h3>
+  <h3><a href="mailto:">Email my resume to yourself!</a></h3>
+  <!-- how to mail to clicker's own email? -->
+  <!-- how to include body text and more importantly, link to my resume ? -->
+
 </section>
+<script>
+
+  $(document).ready(function(){
 
 
-<a href="/pdfs/resume_adrian_lin.pdf" download="Adrian Lin Resume.pdf">Download this pdf</a>
-<a href="/images/bg.jpg" download="image">download this imag></a>
+    /* set up new date on PDF download */
+    var $downloadResume = $('#download-resume'),
+        docName = $downloadResume.attr('download'),
+        date = new Date(),
+        dateToAppend = (date.getMonth() + 1) + '/' + date.getDate() + '/' +  date.getFullYear();
+
+    var newDocName = docName + dateToAppend + '.pdf';
+    $downloadResume.attr('download', newDocName);
+    /* end */
+
+
+  });
+</script>
+
+
