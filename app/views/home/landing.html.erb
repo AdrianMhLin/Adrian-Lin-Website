@@ -30,16 +30,54 @@
 <section class="section-block bg-image" id="my-tools">
   <h2 class="section-title">My Tools</h2>
   <p>Here are some of the tools I use for my work. These range from <strong>design to coding to teamwork-related tools</strong> so I can understand the process from start to finish.  I am always trying out new tools and apps to find the <strong>best tool for the task</strong>.</p>
-  <%= image_tag('/images/fornow/my-tools.png', :alt => "my tools") %>
+  <%= image_tag("/images/fornow/my-tools.png", :alt => "my tools") %>
+
+
+  <ul id="tools-coding"></ul>
+  <ul id="tools-ux"></ul>
+  <ul id="tools-collaboration"></ul>
 
 </section>
+
+<script>
+  var tools = {
+    'coding': [
+      'html',
+      'css',
+      'javascript',
+      'jquery',
+      'rails'
+    ],
+    'ux': [
+      'sketch',
+      'invision',
+      'grafio',
+      'photoshop'
+    ],
+    'collaboration': [
+      'evernote',
+      'trello',
+      'drive'
+    ]
+  }
+  $(document).ready(function(){
+    var iconHtml = '';
+
+    iconHtml += '<li>';
+    iconHtml += '<img href="/images/icons/tools/' + 'javascript' + '.png" alt="' + 'javascript' + '">';
+
+    iconHtml += '</li>';
+
+    $('#tools-coding').append(iconHtml);
+  });
+</script>
 
 <!-- my process -->
 <section class="section-block bg-image" id="bg-my-process">
   <h2 class="section-title">My Process</h2>
 
 </section>
-
+https://www.facebook.com/photo.php?fbid=10156432452435105&set=a.10150275259035105.511259.753795104&type=3
 <!-- contact -->
 <section class="section-block" id="contact-me">
   <h2 class="section-title">Contact me</h2>
