@@ -38,43 +38,54 @@ h1,h2,h3,h4,h5,h6, p {
 
 
 
+.page > section {
+	padding:5em 0 5em 0;
+}
+
 
 /* The Magic Float Center Code */
-#interests {
+.center-bar {
   float: right;
   margin:;
   position: relative;
   left: -50%; /* or right 50% */
-  text-align: left;
 }
-#interests > .child {
-  position: relative;
-  left: 50%;
-}
-ul {
+
+	.center-bar > .child, h4 {
+	  position: relative;
+	  left: 50%;
+	}
+
+.child {
   list-style-type: none;
   margin:0;
   padding:10px 0;
 }
-ul li {
-  float: left;
-  list-style-type: none;
-  margin: 0 6px;
-}
+	.child li {
+	  float: left;
+	  list-style-type: none;
+	  margin: 0 6px;
+	  list-style-type: none;
+
+
+	}
+
 .interest {
-	list-style-type: none;
 	width: 10em;
 	height: 10em;
 	float:left;
 	text-align: center;
 }
 
+
+
+
 /*section blocks */
 .section-block {
 	padding: 3vw 0 3vw 0;
-	width: 100%;
-	background-color: lightblue;
 
+	background-color: lightblue;
+	clear:both;
 }
 .section-block img{
 	max-width: 100%;
