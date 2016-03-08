@@ -61,14 +61,25 @@
     ]
   }
   $(document).ready(function(){
-    var iconHtml = '';
+    // var iconHtml = '';
 
-    iconHtml += '<li>';
-    iconHtml += '<img href="/images/icons/tools/' + 'javascript' + '.png" alt="' + 'javascript' + '">';
+    // iconHtml += '<li>';
+    // iconHtml += '<img href="/images/icons/tools/' + 'javascript' + '.png" alt="' + 'javascript' + '">';
 
-    iconHtml += '</li>';
+    // iconHtml += '</li>';
 
-    $('#tools-coding').append(iconHtml);
+    $('#tools-coding').append('<li></li>');
+
+    var newImg = new Image();
+    newImg.src = '/images/icons/tools/' + 'javascript' + '.png';
+    newImg.alt = 'javascript';
+
+
+    $('#tools-coding > li:last-child').append(newImg);
+
+
+
+    // $('#tools-coding').append(iconHtml);
   });
 </script>
 
