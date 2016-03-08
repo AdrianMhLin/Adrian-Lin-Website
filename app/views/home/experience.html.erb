@@ -11,6 +11,13 @@
     <li><img src="/images/icons/interests-language.png" alt="languages">Learn (human) languages</li>
     <li><img src="/images/icons/interests-flamenco.png" alt="flamenco">Play Flamenco guitar</li>
   </ul>
+
+  <div class="interest">
+    
+  </div>
+  <div class="interest"></div>
+  <div class="interest"></div>
+  <div class="interest"></div>
 </section>
 
 
@@ -21,8 +28,8 @@
 
   <h3>[[Interactive resume goes here]]</h3>
 
-  <a class="btn btn-primary btn-lg" role="button" href="/pdfs/resume_adrian_lin.pdf" download="Adrian/Lin/Resume" id="download-resume">Download my resume!</a>
-
+  <a class="btn btn-primary btn-lg" role="button" href="/pdfs/resume.pdf" download="Adrian/Lin/Resume.pdf" id="download-resume">Download my resume!</a>
+  <a class="btn btn-primary btn-lg" role="button" href="/pdfs/portfolio.pdf" download="Adrian/Lin/Portfolio.pdf" id="download-portfolio">Download my portfolio!</a>
 
   <a class="btn btn-primary btn-lg" role="button" href="" id="mailResumeToSelf">Email my resume link to yourself!</a>
   <!-- how to mail to clicker's own email? -->
@@ -33,7 +40,11 @@
 
   $(document).ready(function(){
     addDateToResumeName();
-    prepareMailtoWithResume();
+
+    var itemsToAdd = ['Resume', 'Portfolio'];
+    prepareMailtoWithResume(itemsToAdd);
+
+    
 
 
   });
@@ -48,23 +59,29 @@
     $downloadResume.attr('download', newDocName);
   }
 
-  function prepareMailtoWithResume(){
+  function getDownloadLink(pdfName) {
+    return 'http://' + window.location.host + '/pdfs/' + pdfName + '.pdf';
+  }
+
+  function prepareMailtoWithResume(items){
+
     var $mailtoBtn = $('#mailResumeToSelf'),
-        downloadLink = 'http://' + window.location.host + '/pdfs/resume_adrian_lin.pdf',
         website = 'http://adrianlin.com',
 
         /*mailto components */
         emailAddress = '',
         subject = 'Check out this Adrian Lin guy!',
-        body = 'Remember to check out Adrian Lin!' 
-                + '%0A'
-                + 'Website: ' + website 
-                + '%0A'
-                + 'Resume: ' + downloadLink,
+        body = 'Remember to check out Adrian Lin!' + '%0A%0A'
+                + 'Website: %0A' + website + '%0A%0A'
 
-        finalMailto;
+    var itemslength = items.length;           
+    for (var i = 0; i < itemslength; i++ ) {
+        body += '' + items[i] + ':%0A' +getDownloadLink(items[i]) + '%0A%0A'; 
+    }
 
-    finalMailto = emailAddress 
+        
+
+    var finalMailto = emailAddress 
                   + '?subject=' + subject
                   + '&body=' + body 
     finalMailto = 'mailto:' + finalMailto;
