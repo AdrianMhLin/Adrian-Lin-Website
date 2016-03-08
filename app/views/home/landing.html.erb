@@ -61,26 +61,34 @@
     ]
   }
   $(document).ready(function(){
-    // var iconHtml = '';
 
-    // iconHtml += '<li>';
-    // iconHtml += '<img href="/images/icons/tools/' + 'javascript' + '.png" alt="' + 'javascript' + '">';
-
-    // iconHtml += '</li>';
-
-    $('#tools-coding').append('<li></li>');
-
-    var newImg = new Image();
-    newImg.src = '/images/icons/tools/' + 'javascript' + '.png';
-    newImg.alt = 'javascript';
+    
+    attachLis(tools, 'coding', 'tools-coding');
+    attachLis(tools, 'ux', 'tools-ux');
+    attachLis(tools, 'collaboration', 'tools-collaboration');
 
 
-    $('#tools-coding > li:last-child').append(newImg);
-
-
-
-    // $('#tools-coding').append(iconHtml);
   });
+
+  function attachLis(tools, category, ulId) {
+    var itemsLength = tools[category].length,
+        catArray = tools[category];
+
+    for (var i = 0; i < itemsLength; i++) { 
+      var newImg = makeNewImg('/images/icons/tools/', catArray[i], 'png');
+
+      $('#' + ulId).append('<li></li>');
+      $('#' + ulId + ' > li:last-child').append(newImg);
+    }
+  }
+  function makeNewImg(path, filename, filetype) {
+    var newImg = new Image();
+    newImg.src = path + filename + '.' + filetype;
+    newImg.alt = filename;
+
+    return newImg;
+  }
+
 </script>
 
 <!-- my process -->
