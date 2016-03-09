@@ -1,0 +1,131 @@
+/* navbars */
+
+#work-nav {
+	top: 4vw;	
+}
+
+
+h1,h2,h3,h4,h5,h6, p {
+	text-align:center;
+	max-width:80vw;
+	margin:0 auto !important;
+	display:block;
+}
+p {margin: 0 auto !important;}
+
+.bg-image {
+	width: 100%;
+	background-size:100%;
+}
+
+#bg-landing {
+	background-image: url('/images/bg.jpg');
+	height:40.8vw;
+	text-align: center;
+}
+
+#bg-contact {
+	background-image: url('/images/contact1.jpg');
+	height: 60vw;
+	text-align: center;
+}
+
+#my-tools {
+/*	background-image: url('/images/fornow/my-tools.png');
+	height:50vw;*/
+	background-color:white;
+
+}
+	#my-tools > img {
+		display:block;
+		margin:0 auto;
+	}
+#bg-my-process {
+	background-image: url('/images/fornow/my-process.png');
+	height:50vw;
+}
+
+
+
+/* pdfs */
+.pdf-view {
+	width:100%; 
+	height:100vh;
+}
+
+
+
+.page > section {
+	padding:5em 0 5em 0;
+}
+
+
+/* The Magic Float Center Code */
+.center-bar {
+  float: right;
+  margin:;
+  position: relative;
+  left: -50%; /* or right 50% */
+}
+
+	.center-bar > .child, h4 {
+	  position: relative;
+	  left: 50%;
+	}
+
+.child {
+  list-style-type: none;
+  margin:0;
+  padding:10px 0;
+}
+	.child li {
+	  float: left;
+	  list-style-type: none;
+	  margin: 0 6px;
+	  list-style-type: none;
+	}
+
+.interest {
+	width: 10em;
+	height: 10em;
+	float:left;
+	text-align: center;
+}
+
+
+
+
+/*section blocks */
+.section-block {
+	padding: 3vw 0 3vw 0;
+
+	background-color: lightblue;
+	clear:both;
+}
+.section-block img{
+	max-width: 100%;
+}
+
+
+	.work-sample img {
+		width: 10vw;
+	}
+
+
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
