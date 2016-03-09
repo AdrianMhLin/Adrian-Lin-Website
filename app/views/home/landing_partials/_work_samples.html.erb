@@ -1,21 +1,30 @@
  
-<div class="autoplay">
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>
-  <div>4</div>
-  <div>5</div>
-  <div>6</div>
-</div>
+<section class="section-block" id="work-samples">
+  <h2 class="section-title">Featured Work</h2> 
+  <div class="carousel-autoplay">
+    <a href="/ux"><%= image_tag("/images/work_samples/sample1.png") %></a>
+    <a href="/ux"><%= image_tag("/images/work_samples/sample2.png") %></a>
+    <a href="/ux"><%= image_tag("/images/work_samples/sample3.png") %></a>
+    <a href="/ux"><%= image_tag("/images/work_samples/sample4.png") %></a>
+  </div>
+</section>
 
 <script>
   $(document).ready(function(){
-    $('.autoplay').slick({
-      slidesToShow: 3,
+
+    /* http://kenwheeler.github.io/slick/ */
+    $('.carousel-autoplay').slick({
+      slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 3500,
+      arrows: true,
+      fade: true,
+      pauseOnHover: true,
+      dots: true,
+      pauseOnDotsHover: true
     });
-  });
 
+
+  });
 </script>
