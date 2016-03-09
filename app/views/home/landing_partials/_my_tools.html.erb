@@ -3,11 +3,14 @@
   <p>Here are some of the tools I use for my work. These range from <strong>design to coding to teamwork-related tools</strong> so I can understand the process from start to finish.  I am always trying out new tools and apps to find the <strong>best tool for the task</strong>.</p>
   <%= image_tag("/images/fornow/my-tools.png", :alt => "my tools") %>
 
+<!-- make a modal that pops down to describe these -->
 <!--
+
   <ul id="tools-coding" class="child"></ul>
   <ul id="tools-ux" class="child"></ul>
   <ul id="tools-collaboration" class="child"></ul>
 -->
+
 </section>
 
 <script>
@@ -46,10 +49,16 @@
         catArray = tools[category];
 
     for (var i = 0; i < itemsLength; i++) { 
-      var newImg = makeNewImg('/images/icons/tools/', catArray[i], 'png');
+      var newImg = makeNewImg('/images/icons/tools/', catArray[i], 'png'),
+          imgBox = '<div class="img-box"></div>';
 
       $('#' + ulId).append('<li></li>');
-      $('#' + ulId + ' > li:last-child').append(newImg);
+      var $lastLi = $('#' + ulId + ' > li:last-child');
+
+      $lastLi.append(imgBox);
+      $lastLi.children().append(newImg);
+
+
     }
   }
   function makeNewImg(path, filename, filetype) {

@@ -42,17 +42,36 @@ h1,h2,h3,h4,h5,h6, p {
 
 
 
-
+/* My Tools */
 #my-tools {
 /*	background-image: url('/images/fornow/my-tools.png');
 	height:50vw;*/
 	background-color:white;
 
 }
-	#my-tools > img {
+	#my-tools > img { /*for the fornow image */
 		display:block;
 		margin:0 auto;
 	}
+	
+	#my-tools ul {
+		clear:both;
+	}
+	.img-box {
+		width: 6em;
+		height: 6em;
+	}
+		.img-box img {
+			display:block;
+			margin:0 auto;
+		}
+	#tools-coding {}
+	#tools-ux {}
+	#tools-collaboration {}
+	
+
+
+/*My Process*/
 #bg-my-process {
 	background-image: url('/images/fornow/my-process.png');
 	height:50vw;
@@ -60,7 +79,7 @@ h1,h2,h3,h4,h5,h6, p {
 
 
 
-/* My Tools */
+
 
 
 
