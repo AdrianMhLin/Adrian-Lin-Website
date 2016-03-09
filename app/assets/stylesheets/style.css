@@ -12,6 +12,8 @@ h1,h2,h3,h4,h5,h6, p {
 	display:block;
 }
 
+
+
 .bg-image {
 	width: 100%;
 	background-size:100%;
@@ -28,6 +30,18 @@ h1,h2,h3,h4,h5,h6, p {
 	height: 60vw;
 	text-align: center;
 }
+
+#bg-blog {
+
+}
+
+.active {
+	color:turquoise !important;
+}
+
+
+
+
 
 #my-tools {
 /*	background-image: url('/images/fornow/my-tools.png');

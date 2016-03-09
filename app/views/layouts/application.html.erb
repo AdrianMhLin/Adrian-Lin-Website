@@ -28,5 +28,11 @@
   
   <%= yield %>
 
-
+<script>
+  $(document).ready(function(){
+    var thisPageName = $('main').data('pageName'),
+        navItem = $('#primary-nav').find('a:contains("' + thisPageName + '")');
+    navItem.attr('class', 'active');
+  });
+</script>
 </body></html>
