@@ -73,12 +73,13 @@
         date = new Date(),
         dateToAppend = (date.getMonth() + 1) + '/' + date.getDate() + '/' +  date.getFullYear();
 
-    if (docName.slice(-4) === '.pdf' || docName.slice(-4) === '.PDF') {
-      docName = docName.slice(0, -4);
+    if (docName !== undefined) {
+      if (docName.slice(-4) === '.pdf' || docName.slice(-4) === '.PDF') {
+        docName = docName.slice(0, -4);
+      }
+      var newDocName = docName + '_' + dateToAppend + '.pdf';
+      $downloadResume.attr('download', newDocName);
     }
-
-    var newDocName = docName + '_' + dateToAppend + '.pdf';
-    $downloadResume.attr('download', newDocName);
   }
 
   function getDownloadLink(pdfName) {

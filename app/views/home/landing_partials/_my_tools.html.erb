@@ -1,0 +1,63 @@
+<section class="section-block bg-image" id="my-tools">
+  <h2 class="section-title">My Tools</h2>
+  <p>Here are some of the tools I use for my work. These range from <strong>design to coding to teamwork-related tools</strong> so I can understand the process from start to finish.  I am always trying out new tools and apps to find the <strong>best tool for the task</strong>.</p>
+  <%= image_tag("/images/fornow/my-tools.png", :alt => "my tools") %>
+
+
+  <ul id="tools-coding" class="child"></ul>
+  <ul id="tools-ux" class="child"></ul>
+  <ul id="tools-collaboration" class="child"></ul>
+
+</section>
+
+<script>
+  var tools = {
+    'coding': [
+      'html',
+      'css',
+      'javascript',
+      'jquery',
+      'rails'
+    ],
+    'ux': [
+      'sketch',
+      'invision',
+      'grafio',
+      'photoshop'
+    ],
+    'collaboration': [
+      'evernote',
+      'trello',
+      'drive'
+    ]
+  }
+  $(document).ready(function(){
+
+    
+    attachLis(tools, 'coding', 'tools-coding');
+    attachLis(tools, 'ux', 'tools-ux');
+    attachLis(tools, 'collaboration', 'tools-collaboration');
+
+
+  });
+
+  function attachLis(tools, category, ulId) {
+    var itemsLength = tools[category].length,
+        catArray = tools[category];
+
+    for (var i = 0; i < itemsLength; i++) { 
+      var newImg = makeNewImg('/images/icons/tools/', catArray[i], 'png');
+
+      $('#' + ulId).append('<li></li>');
+      $('#' + ulId + ' > li:last-child').append(newImg);
+    }
+  }
+  function makeNewImg(path, filename, filetype) {
+    var newImg = new Image();
+    newImg.src = path + filename + '.' + filetype;
+    newImg.alt = filename;
+
+    return newImg;
+  }
+
+</script>
