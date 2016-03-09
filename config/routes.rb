@@ -2,10 +2,14 @@ Rails.application.routes.draw do
 
   root 'home#landing'
 
-  get '/experience' => 'home#experience'
-  get '/work' => 'home#work'
+  get '/about' => 'home#about'
   get '/contact' => 'home#contact'
   get '/blog' => 'home#blog'
+
+  get '/resume' => 'home#resume'
+  get '/portfolio' => 'home#portfolio'
+  get '/coding' => 'home#coding'
+  get '/ux' => 'home#ux'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

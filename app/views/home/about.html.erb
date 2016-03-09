@@ -38,12 +38,14 @@
 
 
   <section class="section-block">
+
+
     <h3>Please, have some resumes/portfolios!</h3>
 
     <div class="center-bar">
       <ul class="child">
-        <li><a class="btn btn-primary btn-lg" role="button" href="/pdfs/resume.pdf" download="Adrian/Lin/Resume.pdf" id="download-resume">Resume!</a></li>
-        <li><a class="btn btn-primary btn-lg" role="button" href="/pdfs/portfolio.pdf" download="Adrian/Lin/Portfolio.pdf" id="download-portfolio">Portfolio!</a></li>
+        <li><a class="btn btn-primary btn-lg" role="button" href="/pdfs/Adrian-Lin-Resume.pdf" download="Adrian/Lin/Resume.pdf" id="download-resume">Resume!</a></li>
+        <li><a class="btn btn-primary btn-lg" role="button" href="/pdfs/Adrian-Lin-Portfolio.pdf" download="Adrian/Lin/Portfolio.pdf" id="download-portfolio">Portfolio!</a></li>
 
         <li><a class="btn btn-primary btn-lg" role="button" href="" id="mailResumeToSelf">Email yourself!</a></li> 
       </ul>
@@ -67,9 +69,13 @@
 
   function addDateToResumeName(){
     var $downloadResume = $('#download-resume'),
-        docName = $downloadResume.attr('download'),
+        docName = $downloadResume.attr('download'), 
         date = new Date(),
         dateToAppend = (date.getMonth() + 1) + '/' + date.getDate() + '/' +  date.getFullYear();
+
+    if (docName.slice(-4) === '.pdf' || docName.slice(-4) === '.PDF') {
+      docName = docName.slice(0, -4);
+    }
 
     var newDocName = docName + '_' + dateToAppend + '.pdf';
     $downloadResume.attr('download', newDocName);

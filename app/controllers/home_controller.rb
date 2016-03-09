@@ -5,12 +5,20 @@ class HomeController < ApplicationController
 
   # any other ones should probably be single page applications
 
-  def experience
-    render :experience
+  def about
+    render :about
   end
 
-  def work
-    render :work
+  def resume
+    render :resume
+  end
+
+  def ux
+    render :ux
+  end
+
+  def coding
+    render :coding
   end
 
   def contact 
@@ -20,5 +28,9 @@ class HomeController < ApplicationController
   def blog
     render :blog
   end
+
+
+
+   
 
 end
