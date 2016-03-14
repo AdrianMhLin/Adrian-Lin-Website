@@ -104,6 +104,14 @@ h1,h2,h3,h4,h5,h6, p {
 
 
 
+/*about me */
+#about-me img {
+	width:15em;
+	border-radius:100%;
+	display:block;
+	margin:0 auto;
+}
+
 
 /*INTERESTS*/
 /* The Magic Float Center Code */
