@@ -33,19 +33,31 @@
 </nav>
 
 <script>
-  $( ".cross" ).hide();
-  $( ".menu" ).hide();
-  $( ".hamburger" ).click(function() {
-    $( ".menu" ).slideToggle( "slow", function() {
-      $( ".hamburger" ).hide();
-      $( ".cross" ).show();
-    });
+  $(document).ready(function(){
+    setUpHamburgerMenu('normal');
   });
 
-  $( ".cross" ).click(function() {
-    $( ".menu" ).slideToggle( "slow", function() {
-      $( ".cross" ).hide();
-      $( ".hamburger" ).show();
+  function setUpHamburgerMenu(speed){
+    var $mobileMenu = $('#m-primary-nav .menu'),
+        $hamburgerBtn = $('#m-primary-nav .hamburger'),
+        $closeBtn = $('#m-primary-nav .cross');
+
+    $closeBtn.hide();
+    $mobileMenu.hide();
+
+    $hamburgerBtn.click(function() {
+      $mobileMenu.slideToggle( speed, function() {
+        $hamburgerBtn.hide();
+        $closeBtn.show();
+      });
     });
-  });
+
+    $closeBtn.click(function() {
+      $mobileMenu.slideToggle( speed, function() {
+        $closeBtn.hide();
+        $hamburgerBtn.show();
+      });
+    });
+  }
+  
 </script>

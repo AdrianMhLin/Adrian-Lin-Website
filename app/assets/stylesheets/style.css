@@ -16,7 +16,7 @@
 	#m-primary-nav {
 
 	}
-	#m-primary-nav div{
+	#m-primary-nav .menu{
 		z-index:1000000;
 		font-weight:bold;
 		font-size:0.8em;
@@ -25,18 +25,18 @@
 		position:absolute;
 		text-align:center;
 	}
-	#m-primary-nav div ul {
+	#m-primary-nav .menu ul {
 		margin: 0;
 	 	padding: 0;
 	  	list-style-type: none;
 	 	list-style-image: none;
 	}
-	#m-primary-nav div li {
+	#m-primary-nav .menu li {
 		display: block;
 	   	padding:15px 0 15px 0;
 		border-bottom:#fff 1px solid;
 	}
-	#m-primary-nav div ul li a { 
+	#m-primary-nav .menu ul li a { 
 		text-decoration:none;
 	  	margin: 0;
 	 	color:#2F4F4F;
