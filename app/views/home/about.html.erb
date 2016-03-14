@@ -10,84 +10,12 @@
   <!-- interests -->
   <%= render 'home/aboutme_partials/interests' %>
 
-  <section class="section-block">
 
-    <h3>Please, have some resumes/portfolios!</h3>
-
-    <div class="center-bar">
-      <ul class="child">
-        <li><a class="btn btn-primary btn-lg" role="button" href="/pdfs/Adrian-Lin-Resume.pdf" download="Adrian/Lin/Resume.pdf" id="download-resume">Resume!</a></li>
-        <li><a class="btn btn-primary btn-lg" role="button" href="/pdfs/Adrian-Lin-Portfolio.pdf" download="Adrian/Lin/Portfolio.pdf" id="download-portfolio">Portfolio!</a></li>
-
-        <li><a class="btn btn-primary btn-lg" role="button" href="" id="mailResumeToSelf">Email yourself!</a></li> 
-      </ul>
-      
-    </div>
-  </section>
+  <!-- CTA (includes javascript) -->
+  <%= render 'home/aboutme_partials/ctas' %>
+  
 </main>
 
-<script>
 
-  $(document).ready(function(){
-
-
-    addDateToResumeName();
-
-    var itemsToAdd = ['Resume', 'Portfolio'];
-    prepareMailtoWithResume(itemsToAdd);
-
-    
-
-
-  });
-
-  function addDateToResumeName(){
-    var $downloadResume = $('#download-resume'),
-        docName = $downloadResume.attr('download'), 
-        date = new Date(),
-        dateToAppend = (date.getMonth() + 1) + '/' + date.getDate() + '/' +  date.getFullYear();
-
-    if (docName !== undefined) {
-      if (docName.slice(-4) === '.pdf' || docName.slice(-4) === '.PDF') {
-        docName = docName.slice(0, -4);
-      }
-      var newDocName = docName + '_' + dateToAppend + '.pdf';
-      $downloadResume.attr('download', newDocName);
-    }
-  }
-
-  function getDownloadLink(pdfName) {
-    return 'http://' + window.location.host + '/pdfs/' + pdfName + '.pdf';
-  }
-
-  function prepareMailtoWithResume(items){
-
-    var $mailtoBtn = $('#mailResumeToSelf'),
-        website = 'http://adrianlin.com',
-
-        /*mailto components */
-        emailAddress = '',
-        subject = 'Check out this Adrian Lin guy!',
-        body = 'Remember to check out Adrian Lin!' + '%0A%0A'
-                + 'Website: %0A' + website + '%0A%0A'
-
-    var itemslength = items.length;           
-    for (var i = 0; i < itemslength; i++ ) {
-        body += '' + items[i] + ':%0A' +getDownloadLink(items[i]) + '%0A%0A'; 
-    }
-
-        
-
-    var finalMailto = emailAddress 
-                  + '?subject=' + subject
-                  + '&body=' + body 
-    finalMailto = 'mailto:' + finalMailto;
-    $mailtoBtn.attr('href', finalMailto);
-
-
-
-
-  }
-</script>
 
 
