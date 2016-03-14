@@ -29,7 +29,19 @@
 		position:relative;
 		top:10vw;
 	}
+	#page-about-me h4 {
+		margin: 10vw;
+	}
 
+	#page-about-me .center-bar ul {
+		list-style-type:none;
+		text-align: center;
+		position:relative;
+		right:5vw; /*is this the best centering method? */
+	}
+	#page-about-me .center-bar h5 {
+		margin:0 0 10vw 0 !important;
+	}
 
 
 
