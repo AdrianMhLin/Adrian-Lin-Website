@@ -12,17 +12,45 @@
 	}
 	
 	/* navbars */
-	#primary-nav {
-		display:none; /*TO DO */
+	#primary-nav {display:none;}
+	#m-primary-nav {
+
 	}
+	#m-primary-nav div{
+		z-index:1000000;
+		font-weight:bold;
+		font-size:0.8em;
+		width:100%;
+		background:lightgrey;
+		position:absolute;
+		text-align:center;
+	}
+	#m-primary-nav div ul {
+		margin: 0;
+	 	padding: 0;
+	  	list-style-type: none;
+	 	list-style-image: none;
+	}
+	#m-primary-nav div li {
+		display: block;
+	   	padding:15px 0 15px 0;
+		border-bottom:#fff 1px solid;
+	}
+	#m-primary-nav div ul li a { 
+		text-decoration:none;
+	  	margin: 0;
+	 	color:#2F4F4F;
+	}
+
+
 
 	
 	/*---------*/
 	/* landing */
 	#page-landing {}
-	#page-landing #my-tools img {
-		width:100%;
-	}
+	#page-landing #my-tools img {width:100%;}
+
+
 
 
 
@@ -41,9 +69,7 @@
 
 	/*----------*/
 	/* about me */
-	#page-about-me {
-		background-color:lightblue;
-	}
+	#page-about-me {background-color:lightblue;}
 	#page-about-me .headshot {
 		border-radius:100%;
 		width: 50vw;
@@ -62,9 +88,7 @@
 		position:relative;
 		right:5vw; /*is this the best centering method? */
 	}
-	#page-about-me .center-bar h5 {
-		margin:0 0 10vw 0 !important;
-	}
+	#page-about-me .center-bar h5 {margin:0 0 10vw 0 !important;}
 
 
 
@@ -87,9 +111,8 @@
 @media screen and (min-width: 500px) {
 
 	/* navbars */
-	#work-nav {
-		top: 4vw;	
-	}
+	#m-primary-nav {display:none;}
+	#work-nav {top:4vw;}
 
 
 	h1,h2,h3,h4,h5,h6, p {
@@ -123,9 +146,7 @@
 
 	}
 
-	.active {
-		color:turquoise !important;
-	}
+	.active {color:turquoise !important;}
 
 
 
