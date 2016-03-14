@@ -17,6 +17,29 @@
 	}
 
 	
+	/*---------*/
+	/* landing */
+	#page-landing {}
+	#page-landing #my-tools img {
+		width:100%;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/*----------*/
 	/* about me */
 	#page-about-me {
 		background-color:lightblue;
@@ -117,6 +140,7 @@
 		#my-tools > img { /*for the fornow image */
 			display:block;
 			margin:0 auto;
+			width:100%;
 		}
 		
 		#my-tools ul {
