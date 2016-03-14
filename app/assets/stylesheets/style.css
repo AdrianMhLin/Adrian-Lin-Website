@@ -1,162 +1,175 @@
-/* navbars */
-
-#work-nav {
-	top: 4vw;	
-}
-
-
-h1,h2,h3,h4,h5,h6, p {
-	text-align:center;
-	max-width:80vw;
-	margin:0 auto !important;
-	display:block;
-}
+/* mobile version */
+/*@media (min-width:200px) {*/
+	#bg-contact {
+		background-image: url('/images/contact1.jpg');
+	}
+/*}*/
 
 
 
-.bg-image {
-	width: 100%;
-	background-size:100%;
-}
+/* desktop version */
+@media (min-width: 500px) {
 
-#bg-landing {
-	background-image: url('/images/bg.jpg');
-	height:40.8vw;
-	text-align: center;
-}
-
-#bg-contact {
-	background-image: url('/images/contact1.jpg');
-	height: 60vw;
-	text-align: center;
-}
-
-#bg-blog {
-
-}
-
-.active {
-	color:turquoise !important;
-}
+	/* navbars */
+	#work-nav {
+		top: 4vw;	
+	}
 
 
-
-
-/* My Tools */
-#my-tools {
-/*	background-image: url('/images/fornow/my-tools.png');
-	height:50vw;*/
-	background-color:white;
-
-}
-	#my-tools > img { /*for the fornow image */
+	h1,h2,h3,h4,h5,h6, p {
+		text-align:center;
+		max-width:80vw;
+		margin:0 auto !important;
 		display:block;
-		margin:0 auto;
 	}
-	
-	#my-tools ul {
-		clear:both;
+
+
+
+	.bg-image {
+		width: 100%;
+		background-size:100%;
 	}
-	.img-box {
-		width: 6em;
-		height: 6em;
+
+	#bg-landing {
+		background-image: url('/images/bg.jpg');
+		height:40.8vw;
+		text-align: center;
 	}
-		.img-box img {
+
+	#bg-contact {
+		background-image: url('/images/contact2.jpg');
+		height: 60vw;
+		text-align: center;
+	}
+
+	#bg-blog {
+
+	}
+
+	.active {
+		color:turquoise !important;
+	}
+
+
+
+
+	/* My Tools */
+	#my-tools {
+	/*	background-image: url('/images/fornow/my-tools.png');
+		height:50vw;*/
+		background-color:white;
+
+	}
+		#my-tools > img { /*for the fornow image */
 			display:block;
 			margin:0 auto;
 		}
-	#tools-coding {}
-	#tools-ux {}
-	#tools-collaboration {}
-	
+		
+		#my-tools ul {
+			clear:both;
+		}
+		.img-box {
+			width: 6em;
+			height: 6em;
+		}
+			.img-box img {
+				display:block;
+				margin:0 auto;
+			}
+		#tools-coding {}
+		#tools-ux {}
+		#tools-collaboration {}
+		
 
 
-/*My Process*/
-#bg-my-process {
-	background-image: url('/images/fornow/my-process.png');
-	height:50vw;
-}
-
-
-
-
-
-
-/* pdfs */
-.pdf-view {
-	width:100%; 
-	height:100vh;
-}
-
-
-
-.page > section {
-	padding:5em 0 5em 0;
-}
+	/*My Process*/
+	#bg-my-process {
+		background-image: url('/images/fornow/my-process.png');
+		height:50vw;
+	}
 
 
 
 
-/*about me */
-#about-me img {
-	width:15em;
-	border-radius:100%;
-	display:block;
-	margin:0 auto;
-}
 
 
-/*INTERESTS*/
-/* The Magic Float Center Code */
-.center-bar {
-  float: right;
-  margin:;
-  position: relative;
-  left: -50%; /* or right 50% */
-}
+	/* pdfs */
+	.pdf-view {
+		width:100%; 
+		height:100vh;
+	}
 
-	.center-bar > .child, h4 {
+
+
+	.page > section {
+		padding:5em 0 5em 0;
+	}
+
+
+
+
+	/*about me */
+	#about-me img {
+		width:15em;
+		border-radius:100%;
+		display:block;
+		margin:0 auto;
+	}
+
+
+	/*INTERESTS*/
+	/* The Magic Float Center Code */
+	.center-bar {
+	  float: right;
+	  margin:;
 	  position: relative;
-	  left: 50%;
+	  left: -50%; /* or right 50% */
 	}
 
-.child {
-  list-style-type: none;
-  margin:0;
-  padding:10px 0;
-}
-	.child li {
-	  float: left;
+		.center-bar > .child, h4 {
+		  position: relative;
+		  left: 50%;
+		}
+
+	.child {
 	  list-style-type: none;
-	  margin: 0 6px;
-	  list-style-type: none;
+	  margin:0;
+	  padding:10px 0;
+	}
+		.child li {
+		  float: left;
+		  list-style-type: none;
+		  margin: 0 6px;
+		  list-style-type: none;
+		}
+
+	.interest {
+		width: 10em;
+		height: 10em;
+		float:left;
+		text-align: center;
 	}
 
-.interest {
-	width: 10em;
-	height: 10em;
-	float:left;
-	text-align: center;
-}
 
 
 
+	/*section blocks */
+	.section-block {
+		padding: 3vw 0 3vw 0;
 
-/*section blocks */
-.section-block {
-	padding: 3vw 0 3vw 0;
-
-	background-color: lightblue;
-	clear:both;
-}
-.section-block img{
-	max-width: 100%;
-}
-
-
-	.work-sample img {
-		width: 10vw;
+		background-color: lightblue;
+		clear:both;
 	}
+	.section-block img{
+		max-width: 100%;
+	}
+
+
+		.work-sample img {
+			width: 10vw;
+		}
+
+}
 
 
 
