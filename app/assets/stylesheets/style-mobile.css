@@ -1,8 +1,0 @@
-
-/* about */
-@media (max-width: 500px) {
-  #page-about-me {
-    display:none;
-    color:red;
-  }
-}

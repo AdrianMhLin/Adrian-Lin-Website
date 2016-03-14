@@ -1,14 +1,56 @@
 /* mobile version */
-/*@media (min-width:200px) {*/
+@media screen and (min-width:200px) {
+
+	h1,h2,h3,h4,h5,h6 {
+		text-align: center;
+		margin-top:12vw !important;
+	}
+
+	p {
+		margin: 5vw !important;
+		text-align: justify;
+	}
+	
+	/* navbars */
+	#primary-nav {
+		display:none; /*TO DO */
+	}
+
+	
+	/* about me */
+	#page-about-me {
+		background-color:lightblue;
+	}
+	#page-about-me .headshot {
+		border-radius:100%;
+		width: 50vw;
+		display: block;
+		margin: 0 auto;
+		position:relative;
+		top:10vw;
+	}
+
+	#page-about-me 
+
+
+
+
+
+
+
+
+
 	#bg-contact {
 		background-image: url('/images/contact1.jpg');
+		color:red;
 	}
-/*}*/
+
+}
 
 
 
 /* desktop version */
-@media (min-width: 500px) {
+@media screen and (min-width: 500px) {
 
 	/* navbars */
 	#work-nav {
@@ -40,6 +82,7 @@
 		background-image: url('/images/contact2.jpg');
 		height: 60vw;
 		text-align: center;
+		color:blue; /*DELETE THIS*/
 	}
 
 	#bg-blog {
@@ -109,7 +152,7 @@
 
 
 	/*about me */
-	#about-me img {
+	#page-about-me .headshot {
 		width:15em;
 		border-radius:100%;
 		display:block;
