@@ -13,9 +13,6 @@
 	
 	/* navbars */
 	#primary-nav {display:none;}
-	#m-primary-nav {
-
-	}
 	#m-primary-nav .menu{
 		z-index:1000000;
 		font-weight:bold;
@@ -33,13 +30,14 @@
 	}
 	#m-primary-nav .menu li {
 		display: block;
-	   	padding:15px 0 15px 0;
 		border-bottom:#fff 1px solid;
 	}
 	#m-primary-nav .menu ul li a { 
 		text-decoration:none;
 	  	margin: 0;
 	 	color:#2F4F4F;
+	 	display:block;
+	 	font-size:2em;
 	}
 
 
@@ -49,10 +47,12 @@
 	/* landing */
 	#page-landing {}
 	#page-landing #my-tools img {width:100%;}
+	#featured-work {display:none;}
 
 	#my-tools > img {width:100%;}
 
-
+	
+	
 
 
 
@@ -129,7 +129,6 @@
 		background-image: url('/images/contact2.jpg');
 		height: 60vw;
 		text-align: center;
-		color:blue; /*DELETE THIS*/
 	}
 
 	#bg-blog {
@@ -168,7 +167,8 @@
 		#tools-ux {}
 		#tools-collaboration {}
 		
-
+	
+	#m-featured-work {display:none;}
 
 	/*My Process*/
 	#bg-my-process {

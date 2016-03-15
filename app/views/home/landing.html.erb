@@ -1,4 +1,5 @@
 <main data-page-name="Adrian Lin" id="page-landing">
+  
   <h1 style="color:red; padding:0.5em;">Hi, please pardon my website's appearance. I'm still building it! But most relevant stuff is available like my <a href="/resume">resume</a> and my <a href="/ux">UX portfolio</a>. So please, look around!</h1>
 
   <!-- about me -->
@@ -13,17 +14,25 @@
   </section>
 
   <!-- work samples -->
-  <%= render 'home/landing_partials/work_samples' %>
+  <section class="section-block" id="work-samples">
+    <%= render 'home/landing_partials/work_samples' %>
+  </section>
 
   <!-- my tools -->
-  <%= render 'home/landing_partials/my_tools' %>
+  <section class="section-block bg-image" id="my-tools">
+    <%= render 'home/landing_partials/my_tools' %>
+  </section>
 
   <!-- my process -->
   <section class="section-block bg-image" id="bg-my-process">
     <h2 class="section-title">My Process</h2>
-
   </section>
-  <!-- contact -->
-  <%= render 'home/landing_partials/find_me' %>
+
+
+  <!-- find me -->
+  <section class="section-block" id="find-me">
+    <%= render 'home/landing_partials/find_me' %>
+  </section>  
+
 </main>
 
