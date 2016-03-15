@@ -2,7 +2,7 @@
   <h2 class="section-title">Find me</h2>
   <h3><a href="mailto:adrianlin.nyc@gmail.com">adrianlin.nyc@gmail.com</a></h3>
   <div id="online-presence" class="center-bar">
-<!--     <ul class="child">
+    <ul class="child">
       <li>
         <a href="https://www.linkedin.com/in/adrianmhlin">
           <img src="/images/icons/services/linkedin.png" alt="Adrian Lin's LinkedIn">
@@ -56,57 +56,8 @@
           <img src="/images/icons/services/gplus.png" alt="Adrian Lin's Google Plus">
         </a>
       </li>
-
     </ul>
- -->
-    <ul class="child" id="find-my-services"></ul>
-  </div>
-
-  <script>
-    $(document).ready(function(){
-      attachServicesLis(services, 'service', 'find-my-services');
-    });
-
-    var services = {
-      'service': [
-        'linkedin',
-        'github',
-        'medium',
-        'pinterest',
-        'quora',
-        'soundcloud',
-        'twitter',
-        'instagram',
-        'gplus'
-      ]
-    }
-
-    function attachServicesLis(services, category, ulId) {
-      var itemsLength = services[category].length,
-          catArray = services[category];
-
-      for (var i = 0; i < itemsLength; i++) { 
-        var newImg = makeNewImg('/images/icons/services/', catArray[i], 'png'),
-            imgBox = '<div class="img-box"></div>';
-
-        $('#' + ulId).append('<li></li>');
-        var $lastLi = $('#' + ulId + ' > li:last-child');
-
-        $lastLi.append(imgBox);
-        $lastLi.children().append(newImg);
 
 
-      }
-    }
-    function makeNewImg(path, filename, filetype) {
-      var newImg = new Image();
-      newImg.src = path + filename + '.' + filetype;
-      newImg.alt = filename;
-
-      return newImg;
-    }
-
-
-  </script>
 
 </section>  
