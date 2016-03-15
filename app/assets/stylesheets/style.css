@@ -82,7 +82,16 @@
 
 
 
-
+	/*---------*/
+	/* Find me */
+	#find-me li {
+		list-style-type: none;
+		display:inline;
+	}
+	#find-me img {
+		width:5em;
+		margin:1em;
+	}
 
 
 
