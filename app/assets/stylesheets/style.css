@@ -50,17 +50,7 @@
 	#page-landing {}
 	#page-landing #my-tools img {width:100%;}
 
-
-
-
-
-
-
-
-
-
-
-
+	#my-tools > img {width:100%;}
 
 
 
@@ -161,7 +151,6 @@
 		#my-tools > img { /*for the fornow image */
 			display:block;
 			margin:0 auto;
-			width:100%;
 		}
 		
 		#my-tools ul {
@@ -253,7 +242,6 @@
 
 
 
-
 	/*section blocks */
 	.section-block {
 		padding: 3vw 0 3vw 0;
@@ -269,6 +257,25 @@
 		.work-sample img {
 			width: 10vw;
 		}
+
+
+	/*---------*/
+	/* Find me */
+	#find-me li {
+		list-style-type: none;
+		display:inline;
+	}
+	#find-me img {
+		width:5em;
+		margin:1em;
+	}
+
+
+	/*--------*/
+	/* footer */
+	#primary-footer {
+
+	}
 
 }
 

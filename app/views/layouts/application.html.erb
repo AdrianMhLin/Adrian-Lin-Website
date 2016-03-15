@@ -30,12 +30,14 @@
   
   <%= yield %>
 
+  <%= render 'home/navbar/footer' %>
+
 <script>
   $(document).ready(function(){
-    indicatePageOnNav();
+    highlightNavPage();
   });
 
-  function indicatePageOnNav(){
+  function highlightNavPage(){
     var thisPageName = $('main').data('pageName'),
         navItem = $('#primary-nav').find('a:contains("' + thisPageName + '")');
     // navItem.attr('class', 'active'); /* doesnt work in heroku. why?? */
