@@ -18,6 +18,35 @@ body {
 		text-align: justify;
 	}
 	
+	/* navbars */
+	#primary-nav {display:none;}
+	#m-primary-nav .menu{
+		z-index:1000000;
+		font-weight:bold;
+		font-size:0.8em;
+		width:100%;
+		background:lightgrey;
+		position:absolute;
+		text-align:center;
+	}
+	#m-primary-nav .menu ul {
+		margin: 0;
+	 	padding: 0;
+	  	list-style-type: none;
+	 	list-style-image: none;
+	}
+	#m-primary-nav .menu li {
+		display: block;
+		border-bottom:#fff 1px solid;
+	}
+	#m-primary-nav .menu ul li a { 
+		text-decoration:none;
+	  	margin: 0;
+	  	padding: 0.5em 0 0.5em 0;
+	 	color:#2F4F4F;
+	 	display:block;
+	 	font-size:2em;
+	}
 
 
 
@@ -89,7 +118,9 @@ body {
 /* desktop version */
 @media screen and (min-width: 500px) {
 
-	
+	/* navbars */
+	#m-primary-nav {display:none;}
+	#work-nav {top:4vw;}
 
 
 	h1,h2,h3,h4,h5,h6, p {
