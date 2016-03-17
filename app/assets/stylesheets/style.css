@@ -36,30 +36,7 @@ body {
 
 
 
-	/*----------*/
-	/* about me */
-	#page-about-me {background-color:white;}
-	#page-about-me .headshot {
-		border-radius:100%;
-		width: 50vw;
-		display: block;
-		margin: 0 auto;
-		position:relative;
-		top:10vw;
-		border: 0.5em solid darkcyan;
-	}
-	#page-about-me h4 {
-		margin: 10vw;
-	}
-
-	#page-about-me .center-bar ul {
-		list-style-type:none;
-		text-align: center;
-		position:relative;
-		right:5vw; /*is this the best centering method? */
-	}
-	#page-about-me .center-bar h5 {margin:0 0 10vw 0 !important;}
-
+	
 
 
 	/*---------*/
@@ -183,55 +160,7 @@ body {
 
 
 
-	/*about me */
-	#page-about-me {}
-	#page-about-me .headshot {
-		width:15em;
-		border-radius:100% !important;
-		display:block;
-		margin:0 auto;
-		position:relative;
-		border: 0.5em solid turquoise !important;
-
-	}
-
-
-
-	/*INTERESTS*/
-	/* The Magic Float Center Code */
-	.center-bar {
-	  float: right;
-	  position: relative;
-	  left: -50%; /* or right 50% */
-	}
-
-		.center-bar > .child, h4 {
-		  position: relative;
-		  left: 50%;
-		}
-
-	.child {
-	  list-style-type: none;
-	  margin:0;
-	  padding:10px 0;
-	}
-		.child li {
-		  float: left;
-		  list-style-type: none;
-		  margin: 0 6px;
-		  list-style-type: none;
-		}
-
-	.interest {
-		width: 10em;
-		height: 10em;
-		float:left;
-		text-align: center;
-	}
-	.interest a {
-		color: darkcyan;
-	}
-
+	
 
 	/*section blocks */
 	.section-block {
