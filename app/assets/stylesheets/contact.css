@@ -1,0 +1,19 @@
+/* mobile version */
+@media screen and (max-width:500px) {
+	#page-contact {
+/*		background-image: url('/images/contact2.jpg');*/
+/*		background-size:100% no-repeat;
+*/		height:100vh;
+		margin-top:-17vh;
+	}
+
+}
+
+/* desktop version */
+@media screen and (min-width: 500px) {
+	#bg-contact {
+		background-image: url('/images/contact2.jpg');
+		height: 60vw;
+		text-align: center;
+	}
+}

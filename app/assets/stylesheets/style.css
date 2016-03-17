@@ -2,6 +2,8 @@ body {
 	color: darkcyan !important;
 }
 
+
+
 /* mobile version */
 @media screen and (max-width:500px) {
 	body {
@@ -19,46 +21,6 @@ body {
 	}
 	
 
-
-
-	
-	/*---------*/
-	/* landing */
-	#page-landing {}
-	#page-landing #my-tools img {width:100%;}
-	#featured-work {display:none;}
-
-	#my-tools > img {width:100%;}
-
-	
-	
-
-
-
-
-	
-
-
-	/*---------*/
-	/* Find me */
-	#find-me li {
-		list-style-type: none;
-		display:inline;
-	}
-	#find-me img {
-		width:5em;
-		margin:1em;
-	}
-
-
-
-
-
-	#bg-contact {
-		background-image: url('/images/contact1.jpg');
-		color:red;
-	}
-
 }
 
 
@@ -67,8 +29,6 @@ body {
 @media screen and (min-width: 500px) {
 
 	
-
-
 	h1,h2,h3,h4,h5,h6, p {
 		text-align:center;
 		max-width:80vw;
@@ -82,66 +42,9 @@ body {
 		background-size:100%;
 	}
 
-	#bg-landing {
-		background-image: url('/images/bg.jpg');
-		background-size:100% auto;
-		height:40.8vw;
-		text-align: center;
-	}
-
-	#bg-contact {
-		background-image: url('/images/contact2.jpg');
-		height: 60vw;
-		text-align: center;
-	}
-
-	#bg-blog {
-
-	}
-
-	.active {color:turquoise !important;}
 
 
-
-
-	/* My Tools */
-	#my-tools {
-	/*	background-image: url('/images/fornow/my-tools.png');
-		height:50vw;*/
-		background-color:white;
-
-	}
-		#my-tools > img { /*for the fornow image */
-			display:block;
-			margin:0 auto;
-		}
-		
-		#my-tools ul {
-			clear:both;
-		}
-		.img-box {
-			width: 6em;
-			height: 6em;
-		}
-			.img-box img {
-				display:block;
-				margin:0 auto;
-			}
-		#tools-coding {}
-		#tools-ux {}
-		#tools-collaboration {}
-		
 	
-	#m-featured-work {display:none;}
-
-	/*My Process*/
-	#bg-my-process {
-		background-image: url('/images/fornow/my-process.png');
-		height:50vw;
-	}
-
-
-
 
 
 
@@ -160,8 +63,6 @@ body {
 
 
 
-	
-
 	/*section blocks */
 	.section-block {
 		padding: 3vw 0 3vw 0;
@@ -171,22 +72,12 @@ body {
 		max-width: 100%;
 	}
 
-
 		.work-sample img {
 			width: 10vw;
 		}
 
 
-	/*---------*/
-	/* Find me */
-	#find-me li {
-		list-style-type: none;
-		display:inline;
-	}
-	#find-me img {
-		width:5em;
-		margin:1em;
-	}
+
 
 
 	/*--------*/
