@@ -13,11 +13,13 @@ body {
 	h1,h2,h3,h4,h5,h6 {
 		text-align: center;
 		margin-top:12vw !important;
+		font-family: helvetica;
 	}
 
 	p {
 		margin: 5vw !important;
 		text-align: justify;
+		font-family: century;
 	}
 	
 
@@ -35,6 +37,8 @@ body {
 		margin:0 auto !important;
 		display:block;
 	}
+	h1,h2,h3,h4,h5,h6 {font-family: helvetica;}
+	p {font-family:century;}
 
 
 	.bg-image {
