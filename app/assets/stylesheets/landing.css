@@ -12,7 +12,20 @@
 
 	/* My process */
 	#my-process {background-image: none;}
-	#m-my-process {width:100%;}
+/*	#m-my-process {width:100%;}*/
+
+	#my-process-diagram > section {}
+	#my-process-diagram h3 {
+		color:#155A61;
+		margin: 10vw 0 2vw 0 !important;
+	}
+	#my-process-diagram div {
+		background-color:#F3F3F3;
+		padding:1vw;
+		width:80vw;
+		margin: 0 auto;
+		border-radius: 2vw;
+	}
 
 	/*---------*/
 	/* Find me */
@@ -74,8 +87,8 @@
 
 	/*------------*/
 	/* My Process */
-	#m-my-process {display:none;}
-	#my-process {
+/*	#m-my-process {display:none;}
+*/	#my-process {
 		background-image: url('/images/fornow/my-process.png');
 		height:50vw;
 	}
