@@ -56,10 +56,6 @@ body {
 
 
 
-	
-
-
-
 	/* pdfs */
 	.pdf-view {
 		width:100%; 
@@ -67,11 +63,7 @@ body {
 	}
 
 
-
-	.page > section {
-		padding:5em 0 5em 0;
-	}
-
+	.page > section {padding:5em 0 5em 0;}
 
 
 
