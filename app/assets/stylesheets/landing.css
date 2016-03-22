@@ -93,6 +93,7 @@
 		background-image: url('/images/fornow/my-process.png');
 		height:50vw;
 	}
+	#my-process-diagram {display:none;}
 
 
 	/*---------*/
