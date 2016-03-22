@@ -32,7 +32,8 @@
 
 @media screen and (min-width: 500px) {
 	/* navbars */
-	#m-primary-nav, #m-primary-footer {display:none;}
+	#m-primary-nav,#m-primary-footer {display:none;}
+
 
 	.active {color:turquoise !important;}
 
