@@ -7,7 +7,12 @@
 	#page-landing #my-tools img {width:100%;}
 	#featured-work {display:none;}
 
+	/* My tools */
 	#my-tools > img {width:100%;}
+
+	/* My process */
+	#my-process {background-image: none;}
+	#m-my-process {width:100%;}
 
 	/*---------*/
 	/* Find me */
@@ -63,15 +68,18 @@
 		#tools-ux {}
 		#tools-collaboration {}
 		
-	
+	/*---------------*/
+	/* featured work */
 	#m-featured-work {display:none;}
 
 	/*------------*/
 	/* My Process */
-	#bg-my-process {
+	#m-my-process {display:none;}
+	#my-process {
 		background-image: url('/images/fornow/my-process.png');
 		height:50vw;
 	}
+
 
 	/*---------*/
 	/* Find me */
