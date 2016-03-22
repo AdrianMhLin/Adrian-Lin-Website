@@ -1,4 +1,4 @@
-html {overflow-x: hidden;}
+html {overflow-x: hidden;} /* this prevents horizontal scrolling */
 body {
 	color: darkcyan !important;
 	overflow:hidden;

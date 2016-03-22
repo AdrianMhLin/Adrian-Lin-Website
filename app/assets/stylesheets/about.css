@@ -47,7 +47,7 @@
 	  left: -50%; /* or right 50% */
 	}
 
-		.center-bar > .child, h4 {
+		.center-bar > .child, .center-bar > h4 {
 		  position: relative;
 		  left: 50%;
 		}
