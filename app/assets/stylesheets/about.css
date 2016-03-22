@@ -16,6 +16,7 @@
 	#page-about-me h4 {
 		margin: 10vw;
 	}
+	#page-about-me .section-title {padding-top:11vw;}
 
 	#page-about-me .center-bar ul {
 		list-style-type:none;
