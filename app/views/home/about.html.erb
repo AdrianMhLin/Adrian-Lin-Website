@@ -12,10 +12,21 @@
 
 
   <!-- CTA (includes javascript) -->
-  <%= render 'home/aboutme_partials/ctas' %>
+  <!-- render 'home/aboutme_partials/ctas' -->
+
+
   
 </main>
 
+<script>
+  $(document).ready(function(){
+    $('#primary-footer').css('bottom', 0)
+                        .css('position', 'absolute')
+                        .css('left', '6%');
 
+
+    $('#m-primary-footer').css('bottom', 0);
+  });
+</script>
 
 

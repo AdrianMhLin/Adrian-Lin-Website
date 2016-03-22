@@ -1,6 +1,6 @@
 @media screen and (max-width: 500px) {
 	/* navbars */
-	#primary-nav {display:none;}
+	#primary-nav, #primary-footer {display:none;}
 	#m-primary-nav .menu{
 		z-index:1000000;
 		font-weight:bold;
@@ -32,7 +32,9 @@
 
 @media screen and (min-width: 500px) {
 	/* navbars */
-	#m-primary-nav {display:none;}
-	#primary-nav {}
+	#m-primary-nav, #m-primary-footer {display:none;}
+
 	.active {color:turquoise !important;}
+
+
 }
