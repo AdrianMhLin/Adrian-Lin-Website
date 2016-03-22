@@ -18,6 +18,7 @@
 	#my-process-diagram h3 {
 		color:#155A61;
 		margin: 10vw 0 2vw 0 !important;
+		font-weight:bold;
 	}
 	#my-process-diagram div {
 		background-color:#F3F3F3;
