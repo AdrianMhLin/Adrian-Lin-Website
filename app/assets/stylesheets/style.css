@@ -37,13 +37,12 @@ body {
 
 /* desktop version */
 @media screen and (min-width: 500px) {
-
 	
 	h1,h2,h3,h4,h5,h6, p {
 		text-align:center;
 		max-width:80vw;
-		margin:0 auto;
 		display:block;
+		margin: 0 auto !important;
 	}
 	h1,h2,h3,h4,h5,h6 {font-family: helvetica;}
 	p {font-family:century;}

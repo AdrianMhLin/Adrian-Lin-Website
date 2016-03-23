@@ -24,6 +24,7 @@
   $(document).ready(function(){
     attachProjects(projectsHash);
     createProjectSlideUpPanel();
+    stickFooterAtBottom('primary-footer');
 
   });
 
@@ -37,7 +38,7 @@
         'User flows'
         ],
       'description': 'Designing an itinerary feature for the Yelp smartphone app.',
-      'link': ''
+      'link': '/work/yelp'
     },
 
     'LinkedIn Projects': {
@@ -49,7 +50,7 @@
         'Prototyping'
       ],
       'description': 'Designing a platform that brings together people looking to work on their skills and people who want help for their projects.',
-      'link': ''
+      'link': '/work/linkedin'
     },
 
     'Inked Voices': {
@@ -61,7 +62,7 @@
         'Usability testing'
       ],
       'description': 'Redesigning the site navigation to streamline the signup process',
-      'link': ''
+      'link': '/work/inked-voices'
     }
   }
 
@@ -105,7 +106,7 @@
         $(this).children('.description').show();
       })
       .mouseout(function(){
-        // $(this).children('.description').hide();
+        $(this).children('.description').hide();
       });
   }
 
