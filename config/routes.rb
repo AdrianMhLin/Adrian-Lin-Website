@@ -13,6 +13,7 @@ Rails.application.routes.draw do
 
 
   get '/work' => 'work#work'
+  get '/portfolio' => 'work#portfolio'
   get '/work/yelp' => 'work#yelp'
   get '/work/linkedin' => 'work#linkedin'
   get '/work/inked-voices' => 'work#inked_voices'

@@ -3,6 +3,10 @@ class WorkController < ApplicationController
     render :work
   end
 
+  def portfolio
+    render :portfolio
+  end
+
   def yelp
     render :yelp
   end
