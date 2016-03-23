@@ -23,6 +23,7 @@
   */
   $(document).ready(function(){
     attachProjects(projectsHash);
+    createProjectSlideUpPanel();
 
   });
 
@@ -84,8 +85,10 @@
       projectTemplate +=          '<li>' + skills[0] + '</li>';
       projectTemplate +=          '<li>' + skills[1] + '</li>';
       projectTemplate +=          '<li>' + skills[2] + '</li>';
-      projectTemplate +=        '<p class="hidden">' + description + '</p>'; 
-      projectTemplate +=      '</div>'; 
+      projectTemplate +=        '</ul>';
+      projectTemplate +=        '<p>' + description + '</p>'; 
+      projectTemplate +=      '</div>';
+      projectTemplate +=      '<div class="opaque-overlay"></div>' 
       projectTemplate +=    '</section>';
       projectTemplate +=  '</a>';
                       
@@ -96,6 +99,15 @@
   }
 
   
+  function createProjectSlideUpPanel() {
+    $('.project')
+      .mouseover(function(){
+        $(this).children('.description').show();
+      })
+      .mouseout(function(){
+        // $(this).children('.description').hide();
+      });
+  }
 
 
 

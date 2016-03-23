@@ -37,7 +37,11 @@
 
 	.active {color:turquoise !important;}
 
-	#primary-footer {clear:both;}
+	#primary-footer {
+		clear:both;
+		width:100%;
+	}
+	#primary-footer p {margin: 0 auto !important;}
 
 
 }

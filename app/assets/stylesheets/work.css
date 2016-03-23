@@ -8,14 +8,26 @@
 @media screen and (min-width: 500px) {
 	#page-work {}
 
+/*	.project, .opaque-overlay {
+		width: 30vw;
+		height: 30vw;
+	}*/
+
 	.project {
-		width: 20vw;
-		height: 20vw;
+		width: 27vw;
+		height: 27vw;
 		float: left;
-		margin: 2.5vw;
+		margin: 3.16vw;
 		border: 0.25em solid turquoise;
 		border-radius: 0.5vw;
+		background-size:auto;
 	}
-	.hidden {display: hide;}
+	.project:hover {background-image:none !important;}
+	
+	.description {display:none;}
+	.description p {
+		text-align: left;
+		margin: 20px;
+	}
 
 }
