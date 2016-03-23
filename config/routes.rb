@@ -7,7 +7,6 @@ Rails.application.routes.draw do
   get '/blog' => 'home#blog'
 
   get '/resume' => 'home#resume'
-  get '/portfolio' => 'home#portfolio'
   get '/coding' => 'home#coding'
   get '/ux' => 'home#ux'
 
