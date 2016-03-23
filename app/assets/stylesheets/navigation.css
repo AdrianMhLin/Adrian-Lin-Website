@@ -13,9 +13,9 @@
 	#m-primary-nav .hamburger, #m-primary-nav .cross {
 		width:14vw;
 		height:14vw;
-		font-size:9vw;
+		font-size:4.5vw;
 		-webkit-appearance: none;
-  		-webkit-border-radius: 1vw;
+  		-webkit-border-radius: 1.5vw;
 	}
 	#m-primary-nav .menu ul {
 		margin: 0;
