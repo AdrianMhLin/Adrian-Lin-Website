@@ -1,0 +1,21 @@
+/* mobile version */
+@media screen and (max-width: 500px) {
+
+
+}
+
+/* desktop version */
+@media screen and (min-width: 500px) {
+	#page-work {}
+
+	.project {
+		width: 20vw;
+		height: 20vw;
+		float: left;
+		margin: 2.5vw;
+		border: 0.25em solid turquoise;
+		border-radius: 0.5vw;
+	}
+	.hidden {display: hide;}
+
+}

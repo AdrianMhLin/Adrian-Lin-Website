@@ -1,7 +1,11 @@
 <!-- render 'work/work_partials/work_nav' -->
 <main data-page-name="Work" id="page-work">
   
+  <!--     <section class="project">
+      <h3></h3>
 
+      <div class="description"><p></p></div>
+    </section> -->
 
 </main>
 
@@ -13,7 +17,8 @@
       'title': '',
       'thumbnail': '',
       'skills': ['','',''],
-      'description': ''
+      'description': '',
+      'link': ''
     }
   */
   $(document).ready(function(){
@@ -24,35 +29,38 @@
   var projectsHash = {
     'Yelp': {
       'title': 'Yelp',
-      'thumbnail': '',
+      'thumbnail': '/images/work/Yelp/thumbnail.png',
       'skills': [
         'Wireframing',
         'Prototyping',
         'User flows'
         ],
-      'description': 'Designing an itinerary feature for the Yelp smartphone app.'
+      'description': 'Designing an itinerary feature for the Yelp smartphone app.',
+      'link': ''
     },
 
     'LinkedIn Projects': {
       'title': 'LinkedIn Projects',
-      'thumbnail': '',
+      'thumbnail': '/images/work/LinkedIn/thumbnail.png',
       'skills': [
         'Usability testing',
         'Information architecture',
         'Prototyping'
       ],
-      'description': 'Designing a platform that brings together people looking to work on their skills and people who want help for their projects.'
+      'description': 'Designing a platform that brings together people looking to work on their skills and people who want help for their projects.',
+      'link': ''
     },
 
     'Inked Voices': {
       'title': 'Inked Voices',
-      'thumbnail': '',
+      'thumbnail': '/images/work/InkedVoices/thumbnail.png',
       'skills': [
         'Information architecture',
         'Wireframing',
         'Usability testing'
       ],
-      'description': 'Redesigning the site navigation to streamline the signup process'
+      'description': 'Redesigning the site navigation to streamline the signup process',
+      'link': ''
     }
   }
 
@@ -65,18 +73,21 @@
           thumbnail = projectsHash[key]['thumbnail'],
           description = projectsHash[key]['description'],
           skills = projectsHash[key]['skills'],
+          link = projectsHash[key]['link'],
           projectTemplate = ''; 
 
-      projectTemplate +='<section class="project">'
-                      +   '<h3>' + title + '</h3>'
-                      +   '<div class="description">'
-                      +     '<ul class="skills">'
-                      +       '<li>' + skills[0] + '</li>'
-                      +       '<li>' + skills[1] + '</li>'
-                      +       '<li>' + skills[2] + '</li>'
-                      +     '<p>' + description + '</p>' 
-                      +   '</div>' 
-                      + '</section>';
+      projectTemplate +=  '<a href="' + link + '">';
+      projectTemplate +=    '<section class="project" style="background-image:url(' + thumbnail + ');">';
+      projectTemplate +=      '<h3>' + title + '</h3>';
+      projectTemplate +=      '<div class="description">';
+      projectTemplate +=        '<ul class="skills">';
+      projectTemplate +=          '<li>' + skills[0] + '</li>';
+      projectTemplate +=          '<li>' + skills[1] + '</li>';
+      projectTemplate +=          '<li>' + skills[2] + '</li>';
+      projectTemplate +=        '<p class="hidden">' + description + '</p>'; 
+      projectTemplate +=      '</div>'; 
+      projectTemplate +=    '</section>';
+      projectTemplate +=  '</a>';
                       
       $(portfolioSection).append(projectTemplate);
     }
@@ -90,9 +101,5 @@
 
 </script>
 
-    <section class="project">
-      <h3></h3>
 
-      <div class="description"><p></p></div>
-    </section>
 
