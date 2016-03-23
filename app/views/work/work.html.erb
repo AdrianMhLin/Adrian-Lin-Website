@@ -11,7 +11,7 @@
   /*
   var hashTemplate = {
       'title': '',
-      'image': '',
+      'thumbnail': '',
       'skills': ['','',''],
       'description': ''
     }
@@ -24,7 +24,7 @@
   var projectsHash = {
     'Yelp': {
       'title': 'Yelp',
-      'image': '',
+      'thumbnail': '',
       'skills': [
         'Wireframing',
         'Prototyping',
@@ -35,7 +35,7 @@
 
     'LinkedIn Projects': {
       'title': 'LinkedIn Projects',
-      'image': '',
+      'thumbnail': '',
       'skills': [
         'Usability testing',
         'Information architecture',
@@ -46,7 +46,7 @@
 
     'Inked Voices': {
       'title': 'Inked Voices',
-      'image': '',
+      'thumbnail': '',
       'skills': [
         'Information architecture',
         'Wireframing',
@@ -62,7 +62,7 @@
     /* loop through hash and retrieve data and create elements */
     for (key in projectsHash) {
       var title = projectsHash[key]['title'],
-          image = projectsHash[key]['image'],
+          thumbnail = projectsHash[key]['thumbnail'],
           description = projectsHash[key]['description'],
           skills = projectsHash[key]['skills'],
           projectTemplate = ''; 
