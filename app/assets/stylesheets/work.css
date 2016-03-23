@@ -1,3 +1,6 @@
+.page-pdf {width:100%;}
+.page-pdf object {height:100vh;}
+
 /* mobile version */
 @media screen and (max-width: 500px) {
 	#page-work {}
@@ -20,6 +23,7 @@
 		text-align: left;
 		margin: 2vw !important;
 	}*/
+
 
 }
 
