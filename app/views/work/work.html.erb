@@ -93,6 +93,8 @@
 
   
   function createProjectSlideUpPanel() {
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+
     $('.project')
       .mouseover(function(){
         $(this).children('.description').show();
@@ -100,6 +102,8 @@
       .mouseout(function(){
         $(this).children('.description').hide();
       });
+    }
+      
   }
 
 
