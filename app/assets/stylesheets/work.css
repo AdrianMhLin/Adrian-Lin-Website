@@ -1,5 +1,5 @@
 .page-pdf {width:100%;}
-.page-pdf object {height:100vh;}
+.page-pdf object {max-height:100%;}
 
 /* mobile version */
 @media screen and (max-width: 500px) {
