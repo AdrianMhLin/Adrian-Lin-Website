@@ -11,6 +11,9 @@ Rails.application.routes.draw do
   get '/coding' => 'home#coding'
   get '/ux' => 'home#ux'
 
+
+  get '/work' => 'work#work'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

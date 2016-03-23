@@ -14,19 +14,21 @@
 	#my-process {background-image: none;}
 /*	#m-my-process {width:100%;}*/
 
-	#my-process-diagram > section {}
 	#my-process-diagram h3 {
 		color:#155A61;
 		margin: 10vw 0 2vw 0 !important;
 		font-weight:bold;
 	}
+	#my-process-diagram h4 {text-align: left;}
 	#my-process-diagram div {
 		background-color:#F3F3F3;
 		padding:1vw;
-		width:80vw;
+		width:65vw;
 		margin: 0 auto;
 		border-radius: 2vw;
 	}
+
+
 
 	/*---------*/
 	/* Find me */

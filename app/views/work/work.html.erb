@@ -1,0 +1,98 @@
+<!-- render 'work/work_partials/work_nav' -->
+<main data-page-name="Work" id="page-work">
+  
+
+
+</main>
+
+
+<script>
+
+  /*
+  var hashTemplate = {
+      'title': '',
+      'image': '',
+      'skills': ['','',''],
+      'description': ''
+    }
+  */
+  $(document).ready(function(){
+    attachProjects(projectsHash);
+
+  });
+
+  var projectsHash = {
+    'Yelp': {
+      'title': 'Yelp',
+      'image': '',
+      'skills': [
+        'Wireframing',
+        'Prototyping',
+        'User flows'
+        ],
+      'description': 'Designing an itinerary feature for the Yelp smartphone app.'
+    },
+
+    'LinkedIn Projects': {
+      'title': 'LinkedIn Projects',
+      'image': '',
+      'skills': [
+        'Usability testing',
+        'Information architecture',
+        'Prototyping'
+      ],
+      'description': 'Designing a platform that brings together people looking to work on their skills and people who want help for their projects.'
+    },
+
+    'Inked Voices': {
+      'title': 'Inked Voices',
+      'image': '',
+      'skills': [
+        'Information architecture',
+        'Wireframing',
+        'Usability testing'
+      ],
+      'description': 'Redesigning the site navigation to streamline the signup process'
+    }
+  }
+
+  function attachProjects(projectsHash){
+    var portfolioSection = document.createElement('section');
+
+    /* loop through hash and retrieve data and create elements */
+    for (key in projectsHash) {
+      var title = projectsHash[key]['title'],
+          image = projectsHash[key]['image'],
+          description = projectsHash[key]['description'],
+          skills = projectsHash[key]['skills'],
+          projectTemplate = ''; 
+
+      projectTemplate +='<section class="project">'
+                      +   '<h3>' + title + '</h3>'
+                      +   '<div class="description">'
+                      +     '<ul class="skills">'
+                      +       '<li>' + skills[0] + '</li>'
+                      +       '<li>' + skills[1] + '</li>'
+                      +       '<li>' + skills[2] + '</li>'
+                      +     '<p>' + description + '</p>' 
+                      +   '</div>' 
+                      + '</section>';
+                      
+      $(portfolioSection).append(projectTemplate);
+    }
+
+    $('main').append(portfolioSection);
+  }
+
+  
+
+
+
+</script>
+
+    <section class="project">
+      <h3></h3>
+
+      <div class="description"><p></p></div>
+    </section>
+
