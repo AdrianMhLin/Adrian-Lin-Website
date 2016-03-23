@@ -10,6 +10,11 @@
 		position:absolute;
 		text-align:center;
 	}
+	#m-primary-nav .hamburger, #m-primary-nav .cross {
+		width:14vw;
+		height:14vw;
+		font-size:9vw;
+	}
 	#m-primary-nav .menu ul {
 		margin: 0;
 	 	padding: 0;
