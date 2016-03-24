@@ -13,12 +13,7 @@
 
 <script>
 
-  $(document).ready(function(){
-    attachProjects(projectsHash);
-    createProjectSlideUpPanel();
-    stickFooterAtBottom('primary-footer');
 
-  });
 
   var projectsHash = {
     'Yelp': {
@@ -55,8 +50,28 @@
       ],
       'description': 'Redesigning the site navigation to streamline the signup process',
       'link': '/work/inked-voices'
+    },
+
+    'My website': {
+      'title': 'This website!',
+      'thumbnail': '/images/work/PersonalWebsite/thumbnail.png',
+      'skills': [
+        'HTML/CSS',
+        'JavaScript',
+        'Ruby on Rails'
+      ],
+      'description': '90% of what you see here is all coded by me!',
+      'link' '/work/personal-website'
+
     }
   }
+
+  $(document).ready(function(){
+    attachProjects(projectsHash);
+    createProjectSlideUpPanel();
+    stickFooterAtBottom('primary-footer');
+
+  });
 
   function attachProjects(projectsHash){
     var portfolioSection = document.createElement('section');

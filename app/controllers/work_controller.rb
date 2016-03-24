@@ -15,4 +15,8 @@ class WorkController < ApplicationController
     render :inked_voices
   end
 
+  def personal_website
+    render :personal_website
+  end
+
 end
