@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
-  def landing
-    render :landing
+  def index
+    render :index
   end
 
   # any other ones should probably be single page applications
