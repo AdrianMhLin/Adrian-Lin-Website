@@ -1,0 +1,768 @@
+#page-about-me p {
+	margin:0 auto !important;
+}
+
+/* mobile version */
+@media screen and (max-width:500px) {
+	/*----------*/
+	/* about me */
+	#page-about-me {background-color:white;}
+	#page-about-me .headshot {
+		border-radius:100%;
+		width: 50vw;
+		display: block;
+		margin: 0 auto;
+		position:relative;
+		top:10vw;
+		border: 0.5em solid darkcyan;
+	}
+	#page-about-me h4 {
+		margin: 10vw;
+	}
+	#page-about-me .section-title {padding-top:11vw;}
+
+	#page-about-me .center-bar ul {
+		list-style-type:none;
+		text-align: center;
+		position:relative;
+		right:5vw; /*is this the best centering method? */
+	}
+	#page-about-me .center-bar h5 {margin:0 0 10vw 0 !important;}
+}
+
+@media screen and (min-width: 500px) {
+	/*about me */
+	#page-about-me {}
+	#page-about-me .headshot {
+		width:15em;
+		border-radius:100% !important;
+		display:block;
+		margin:0 auto;
+		position:relative;
+		border: 0.5em solid turquoise !important;
+
+	}
+
+	/*INTERESTS*/
+	/* The Magic Float Center Code */
+	.center-bar {
+	  float: right;
+	  position: relative;
+	  left: -50%; /* or right 50% */
+	}
+
+		.center-bar > .child, .center-bar > h4 {
+		  position: relative;
+		  left: 50%;
+		}
+
+	.child {
+	  list-style-type: none;
+	  margin:0;
+	  padding:10px 0;
+	}
+		.child li {
+		  float: left;
+		  list-style-type: none;
+		  margin: 0 6px;
+		  list-style-type: none;
+		}
+
+	.interest {
+		width: 10em;
+		height: 10em;
+		float:left;
+		text-align: center;
+	}
+	.interest a {
+		color: darkcyan;
+	}
+
+
+}
+/* mobile version */
+
+@media screen and (max-width:500px) {
+	#page-contact {
+/*		background-image: url('/images/contact2.jpg');*/
+/*		background-size:100% no-repeat;
+*/		height:100vh;
+		margin-top:-17vh;
+	}
+
+	#page-contact a {
+		text-align:center;
+		display:block;
+	}
+
+	#page-contact h1 {margin-top:22vh !important;}
+
+}
+
+/* desktop version */
+@media screen and (min-width: 500px) {
+	#bg-contact {
+		background-image: url('/images/contact2.jpg');
+		height: 60vw;
+		text-align: center;
+	}
+}
+/* mobile version */
+
+@media screen and (max-width:500px) {
+
+	/*---------*/
+	/* landing */
+	#page-landing {}
+	#page-landing #my-tools img {width:100%;}
+	#featured-work {display:none;}
+
+	/* My tools */
+	#my-tools > img {width:100%;}
+
+	/* My process */
+	#my-process {background-image: none;}
+/*	#m-my-process {width:100%;}*/
+
+	#my-process-diagram h3 {
+		color:#155A61;
+		margin: 10vw 0 2vw 0 !important;
+		font-weight:bold;
+	}
+	#my-process-diagram h4 {text-align: left;}
+	#my-process-diagram div {
+		background-color:#F3F3F3;
+		padding:1vw;
+		width:65vw;
+		margin: 0 auto;
+		border-radius: 2vw;
+	}
+
+
+
+	/*---------*/
+	/* Find me */
+	#find-me li {
+		list-style-type: none;
+		display:inline;
+	}
+	#find-me img {
+		width:5em;
+		margin:1em;
+	}
+
+
+}
+
+
+/* desktop version */
+@media screen and (min-width: 500px) {
+
+
+	#bg-landing {
+		background-image: url('/images/bg.jpg');
+		background-size:100% auto;
+		height:40.8vw;
+		text-align: center;
+	}
+
+	/*----------*/
+	/* My Tools */
+	#my-tools {
+	/*	background-image: url('/images/fornow/my-tools.png');
+		height:50vw;*/
+		background-color:white;
+
+	}
+		#my-tools > img { /*for the fornow image */
+			display:block;
+			margin:0 auto;
+		}
+		
+		#my-tools ul {
+			clear:both;
+		}
+		.img-box {
+			width: 6em;
+			height: 6em;
+		}
+			.img-box img {
+				display:block;
+				margin:0 auto;
+			}
+		#tools-coding {}
+		#tools-ux {}
+		#tools-collaboration {}
+		
+	/*---------------*/
+	/* featured work */
+	#m-featured-work {display:none;}
+
+	/*------------*/
+	/* My Process */
+/*	#m-my-process {display:none;}
+*/	#my-process {
+		background-image: url('/images/fornow/my-process.png');
+		height:50vw;
+	}
+	#my-process-diagram {display:none;}
+
+
+	/*---------*/
+	/* Find me */
+	#find-me li {
+		list-style-type: none;
+		display:inline;
+	}
+	#find-me img {
+		width:5em;
+		margin:1em;
+	}
+
+}
+@media screen and (max-width: 500px) {
+	/* navbars */
+	#primary-nav, #primary-footer {display:none;}
+	#m-primary-nav .menu{
+		z-index:1000000;
+		font-weight:bold;
+		font-size:0.8em;
+		width:100%;
+		background:lightgrey;
+		position:absolute;
+		text-align:center;
+	}
+	#m-primary-nav .hamburger, #m-primary-nav .cross {
+		width:14vw;
+		height:14vw;
+		font-size:4.5vw;
+		-webkit-appearance: none;
+  		-webkit-border-radius: 1.5vw;
+	}
+	#m-primary-nav .menu ul {
+		margin: 0;
+	 	padding: 0;
+	  	list-style-type: none;
+	 	list-style-image: none;
+	}
+	#m-primary-nav .menu li {
+		display: block;
+		border-bottom:#fff 1px solid;
+	}
+	#m-primary-nav .menu ul li a { 
+		text-decoration:none;
+	  	margin: 0;
+	  	padding: 0.5em 0 0.5em 0;
+	 	color:#2F4F4F;
+	 	display:block;
+	 	font-size:2em;
+	}
+}
+
+@media screen and (min-width: 500px) {
+	/* navbars */
+	#m-primary-nav,#m-primary-footer {display:none;}
+
+
+	.active {color:turquoise !important;}
+
+	#primary-footer {
+		clear:both;
+		width:100%;
+	}
+	#primary-footer p {margin: 0 auto !important;}
+
+
+}
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+    background: #fff url('./ajax-loader.gif') center center no-repeat;
+}
+
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('./fonts/slick.eot');
+    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+}
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin-top: -10px\9; /*lte IE 8*/
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+    left: -25px;
+}
+[dir='rtl'] .slick-prev
+{
+    right: -25px;
+    left: auto;
+}
+.slick-prev:before
+{
+    content: '←';
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: '→';
+}
+
+.slick-next
+{
+    right: -25px;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
+}
+.slick-next:before
+{
+    content: '→';
+}
+[dir='rtl'] .slick-next:before
+{
+    content: '←';
+}
+
+/* Dots */
+.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: -45px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '•';
+    text-align: center;
+
+    opacity: .25;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: black;
+}
+/* Slider */
+
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+html {overflow-x: hidden;} /* this prevents horizontal scrolling */
+body {
+	color: darkcyan !important;
+	overflow:hidden;
+    width:100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+}
+
+main {width:100%;}
+
+
+
+/* mobile version */
+@media screen and (max-width:500px) {
+	body {
+		margin: 0 !important;
+		width:100vw;
+	}
+
+	h1,h2,h3,h4,h5,h6 {
+		text-align: center;
+		margin:5vw !important;
+		font-family: helvetica;
+	}
+
+	p {
+		margin: 5vw !important;
+		text-align: justify;
+		font-family: century;
+	}
+	
+
+}
+
+
+
+/* desktop version */
+@media screen and (min-width: 500px) {
+	
+	h1,h2,h3,h4,h5,h6, p {
+		text-align:center;
+		max-width:80vw;
+		display:block;
+		margin: 0 auto !important;
+	}
+	h1,h2,h3,h4,h5,h6 {font-family: helvetica;}
+	p {font-family:century;}
+
+
+	.bg-image {
+		width: 100%;
+		background-size:100%;
+	}
+
+
+
+	/* pdfs */
+	.pdf-view {
+		width:100%; 
+		height:100vh;
+	}
+
+
+	.page > section {padding:5em 0 5em 0;}
+
+
+
+	/*section blocks */
+	.section-block {
+		padding: 3vw 0 3vw 0;
+		clear:both;
+	}
+	.section-block img{
+		max-width: 100%;
+	}
+
+		.work-sample img {
+			width: 10vw;
+		}
+
+
+
+
+
+
+
+}
+
+
+
+.page-portfolio img {width:100%;}
+.pdf-view {width:100%;}
+
+/* mobile version */
+@media screen and (max-width: 500px) {
+	#page-work {}
+	#page-work h4 {margin-top: 4vw !important;}
+
+	.project {
+		width: 90vw;
+		height: 45vw;
+		float: left;
+		margin: 5vw;
+		border: 1.25vw solid turquoise;
+		border-radius: 2.5vw;
+		background-size:auto;
+	}
+	/*.project:hover {background-image:none !important;}*/
+	.project h3 {margin: 1vw 0 1vw 0 !important;}
+	
+	.description {display:none;}
+/*	.description p {
+		text-align: left;
+		margin: 2vw !important;
+	}*/
+	#page-resume {display:none;}
+	#m-page-resume img {width:100%;}
+
+
+}
+
+/* desktop version */
+@media screen and (min-width: 500px) {
+	#page-work {}
+	#page-work h4 {margin-top: 4vw !important;}
+
+	.project {
+		width: 27vw;
+		height: 27vw;
+		float: left;
+		margin: 3.16vw;
+		border: 0.25em solid turquoise;
+		border-radius: 0.5vw;
+		background-size:auto;
+	}
+	.project:hover {background-image:none !important;}
+	.project h3 {margin: 1vw 0 1vw 0 !important;}
+	
+	.description {display:none;}
+	.description p {
+		text-align: left;
+		margin: 2vw !important;
+	}
+
+	#m-page-resume {display:none;}
+	
+
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= style-mobile.css
+
+
+ */
+
