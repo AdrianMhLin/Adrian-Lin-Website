@@ -19,7 +19,7 @@ Rails.application.routes.draw do
       get '/work/yelp/presentation' => 'work#yelp_presentation'
 
     get '/work/linkedin' => 'work#linkedin'
-      get '/work/linkedin/presentation' => 'work#linkedin' => 'work#linkedin_presentation'
+      get '/work/linkedin/presentation' => 'work#linkedin_presentation'
 
 
     get '/work/inked-voices' => 'work#inked_voices'

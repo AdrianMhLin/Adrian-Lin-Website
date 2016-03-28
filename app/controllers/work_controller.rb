@@ -19,4 +19,8 @@ class WorkController < ApplicationController
     render :personal_website
   end
 
+  def linkedin
+    render :linkedin
+  end
+
 end
