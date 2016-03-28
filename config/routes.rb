@@ -16,14 +16,14 @@ Rails.application.routes.draw do
   get '/portfolio' => 'work#portfolio'
 
     get '/work/yelp' => 'work#yelp'
-      get '/work/yelp/presentation' => 'work#yelp_presentation'
+      # get '/work/yelp/presentation' => 'work#yelp_presentation'
 
     get '/work/linkedin' => 'work#linkedin'
-      get '/work/linkedin/presentation' => 'work#linkedin_presentation'
+      # get '/work/linkedin/presentation' => 'work#linkedin_presentation'
 
 
     get '/work/inked-voices' => 'work#inked_voices'
-      get '/work/inked-voices/presentation' => 'work#inked_voices_presentation'
+      # get '/work/inked-voices/presentation' => 'work#inked_voices_presentation'
 
 
     get '/work/personal-website' => 'work#personal_website'
