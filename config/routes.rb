@@ -11,13 +11,22 @@ Rails.application.routes.draw do
   get '/ux' => 'home#ux'
 
 
+  #Work
   get '/work' => 'work#work'
   get '/portfolio' => 'work#portfolio'
 
-  get '/work/yelp' => 'work#yelp'
-  get '/work/linkedin' => 'work#linkedin'
-  get '/work/inked-voices' => 'work#inked_voices'
-  get '/work/personal-website' => 'work#personal_website'
+    get '/work/yelp' => 'work#yelp'
+      get '/work/yelp/presentation' => 'work#yelp_presentation'
+
+    get '/work/linkedin' => 'work#linkedin'
+      get '/work/linkedin/presentation' => 'work#linkedin' => 'work#linkedin_presentation'
+
+
+    get '/work/inked-voices' => 'work#inked_voices'
+      get '/work/inked-voices/presentation' => 'work#inked_voices_presentation'
+
+
+    get '/work/personal-website' => 'work#personal_website'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
